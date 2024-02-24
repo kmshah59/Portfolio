@@ -1,0 +1,133 @@
+/* Portfolio.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #2c3e50, #f39c12); /* Night gray to gold gradient */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s; /* Smooth transition for background color */
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-start; /* Left-align content */
+    align-items: center; /* Center vertically */
+    padding: 20px;
+}
+
+.head-img img {
+    border-radius: 20px; /* Rounded rectangle shape */
+    width: 250px; /* Increase the width */
+    height: 250px; /* Increase the height */
+    border: 5px solid #ff8c00; /* Orange border */
+    transition: transform 0.3s ease-in-out; /* Transition effect for image */
+}
+
+.head-img img:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.info {
+    text-align: left; /* Left-align content beside the image */
+    margin-left: 20px; /* Add margin to separate the image from the content */
+}
+
+.contact {
+    margin-top: 10px;
+}
+
+.contact .mail, .contact .number {
+    margin-bottom: 5px;
+}
+
+.skills, .education, .links, .hobbies {
+    background-color: rgba(218, 165, 32, 0.8); /* Rich gold background color for sections with opacity */
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align sections */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background color and box shadow */
+}
+
+.skills:hover, .education:hover, .links:hover, .hobbies:hover {
+    background-color: rgba(184, 134, 11, 0.8); /* Darker rich gold background color on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Box shadow effect on hover */
+}
+
+.skills h1, .education h1, .links h1, .hobbies h1 {
+    color: #ffffff; /* White heading color */
+    font-size: 28px; /* Increase font size */
+}
+
+.skills hr, .education hr, .links hr, .hobbies hr {
+    border: none;
+    height: 2px;
+    background-color: #ffd700; /* Rich gold line color */
+    margin: 20px 0;
+}
+
+.edu, .links ul, .skills ul {
+    list-style-type: none; /* Remove bullets from education, links, and programming skills section */
+    font-size: 20px; /* Increase font size */
+}
+
+.links a, .skills li {
+    text-decoration: none; /* Remove underlines from links in links and programming skills section */
+}
+
+.links ul li, .skills ul li, .hobbies ul li {
+    margin-bottom: 5px;
+    color: #330864; /* Dark purple text color */
+    transition: color 0.3s;
+    font-size: 20px; /* Increase font size */
+}
+
+.links ul li:hover, .skills ul li:hover, .hobbies ul li:hover {
+    color: #ffd700; /* Rich gold text color on hover */
+}
+
+a {
+    color: #330864; /* Dark purple link color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffd700; /* Rich gold link color on hover */
+}
+
+.hobbies ul {
+    display: flex;
+    justify-content: center;
+}
+
+.hobbies ul li {
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #ffd700; /* Rich gold background color */
+    color: #000000; /* Black text color */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hobbies ul li:hover {
+    background-color: #b8860b; /* Dark goldenrod background color on hover */
+}
+
+/* Fade-in animation for info section */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.center-align {
+    text-align: center;
+}
+
